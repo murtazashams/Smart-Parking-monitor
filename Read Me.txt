@@ -1,0 +1,23 @@
+This Directory contains three folders 
+
+1. Publisher Code:
+******************
+
+This folder will have 2 two files
+
+a.) iot-mqtt-publisher.py
+b.) iot-mqtt-subscriber.py
+
+These files contains the code to connect the raspberry pi to the Amazon AWS IoT.
+And will capture the output of the Ultrasonic sensor used in this project and will save it to the Motion-Sensor table created in the Dynamo DB in the cloud.
+
+2. Python Code:
+***************
+
+This folder has got a file named ultra.py which has the python code to enable the sensor and capture its output. The code is programed in such a way that the output got from the sensor is automatically saved to a file named out.txt.
+
+3. Webpage Code:
+****************
+
+The output stored in the out.txt file is used by the code in this webpage.
+Based on the output value, the web page will dynamically mark the corresponding parking area as occupied or available, we have used color code to provide the same output. Green color denotes that the parking space is available, and Red color denotes that it is occupied.

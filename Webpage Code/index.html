@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="EN" lang="EN" dir="ltr">
+<head profile="http://gmpg.org/xfn/11">
+<title>Solar Panel ROI Calculator</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+<meta http-equiv="imagetoolbar" content="no" />
+<!--<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">-->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+<!--<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>-->
+<link rel="stylesheet" href="styles/layout.css" type="text/css" />
+<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.6.1/jquery.min.js"></script>
+
+ <!-- <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>-->
+<script type="text/javascript" src="scripts/jquery-1.4.1.min.js"></script>
+<script type="text/javascript" src="scripts/jquery.slidepanel.setup.js"></script>
+<script type="text/javascript" src="scripts/jquery-ui-1.7.2.custom.min.js"></script>
+<script type="text/javascript" src="scripts/jquery.tabs.setup.js"></script>
+<!--<script type="text/javascript" src="scripts/user_info.js"></script>-->
+</head>
+<body>
+<div class="wrapper col0">
+  <div id="topbar">
+    <div id="slidepanel">
+      
+      <div class="topbox">
+       
+       
+      </div>
+           <div class="topbox last">
+       
+      </div>
+      <br class="clear" />
+    </div>
+    <div id="loginpanel">
+     
+    </div>
+    <br class="clear" />
+  </div>
+</div>
+<!-- ####################################################################################################### -->
+<div class="wrapper col1">
+  <div id="header">
+    <div id="logo">
+      <h1 class="title">Smart Parking</h1>
+      <p>Available Parking Space indicator</p>
+    </div>
+    <div class="fl_right">
+      <ul>
+       <li class="last"><a href="usergeo.html">Map</a></li>
+        <li><a href="#">Online Support</a></li>
+        <li><a href="#">Contact Us</a></li>
+      </ul>
+      <p>Phone: +1 978-XXX-XXXX | Mail: xyz@cs.uml.edu</p>
+    </div>
+    <br class="clear" />
+  </div>
+</div>
+<!-- ####################################################################################################### -->
+<div class="wrapper col2">
+  <div id="topnav">
+
+  </div>
+</div>
+
+<div>
+	<table border="1" style="width:100%">
+		  <tr>
+			<td><h4>Parking Spaces</h4><svg id ="mysvg1" width="1400" height="1400" align="center"></svg></td>
+		  </tr>
+			</table>
+			
+		<div id="fileDisplayArea"></div>
+       
+	
+<script type="text/javascript">
+	//house
+	//drawRect(80,80,200,250);
+		drawLine(1150,60,58,60);
+		drawLine(100,60,100,250);
+		drawLine(300,60,300,250);
+		drawLine(500,60,500,250);
+		drawLine(700,60,700,250);
+		drawLine(900,60,900,250);
+		drawLine(1100,60,1100,250);
+		
+		drawRect1(120,80,160,150);
+		drawRect2(320,80,160,150);
+		drawRect3(520,80,160,150);
+		drawRect4(720,80,160,150);
+		drawRect5(920,80,160,150);
+		
+	
+		
+	//drawLine3(80,80,200,250);
+	//drawLine(321,300,98,300);
+	//drawLine(319,70,319,300);
+	//drawLine(321,70,98,70);
+
+	//drawLine2(100,70,100,300);
+	//drawLine2(321,300,98,300);
+	//drawLine2(319,70,319,300);
+	//drawLine2(321,70,98,70);
+	
+	//drawLine3(100,70,100,300);
+	//drawLine3(321,300,98,300);
+	//drawLine3(319,70,319,300);
+	//drawLine3(321,70,98,70);
+	
+	function drawRect1(x1,y1,x2,y2){
+		var svg   = svg=document.getElementById("mysvg1");
+	    var svgNS = svg.namespaceURI;
+	    var rect = document.createElementNS(svgNS,'rect');
+	    rect.setAttribute('x',x1);
+	    rect.setAttribute('y',y1);
+	    rect.setAttribute('width',x2);
+	    rect.setAttribute('height',y2);
+	    rect.setAttribute('stroke','green');
+		rect.setAttribute('fill','green');
+	    rect.setAttribute('stroke-width','4px');
+	    svg.appendChild(rect);
+	}
+	
+	function drawRect2(x1,y1,x2,y2){
+		var svg   = svg=document.getElementById("mysvg1");
+	    var svgNS = svg.namespaceURI;
+	    var rect = document.createElementNS(svgNS,'rect');
+	    rect.setAttribute('x',x1);
+	    rect.setAttribute('y',y1);
+	    rect.setAttribute('width',x2);
+	    rect.setAttribute('height',y2);
+	    rect.setAttribute('stroke','green');
+		rect.setAttribute('fill','green');
+	    rect.setAttribute('stroke-width','4px');
+	    svg.appendChild(rect);
+	}
+	function drawRect3(x1,y1,x2,y2){
+		var svg   = svg=document.getElementById("mysvg1");
+	    var svgNS = svg.namespaceURI;
+	    var rect = document.createElementNS(svgNS,'rect');
+	    rect.setAttribute('x',x1);
+	    rect.setAttribute('y',y1);
+	    rect.setAttribute('width',x2);
+	    rect.setAttribute('height',y2);
+	    rect.setAttribute('stroke','green');
+		rect.setAttribute('fill','green');
+	    rect.setAttribute('stroke-width','4px');
+	    svg.appendChild(rect);
+	}
+	function drawRect4(x1,y1,x2,y2){
+		var svg   = svg=document.getElementById("mysvg1");
+	    var svgNS = svg.namespaceURI;
+	    var rect = document.createElementNS(svgNS,'rect');
+	    rect.setAttribute('x',x1);
+	    rect.setAttribute('y',y1);
+	    rect.setAttribute('width',x2);
+	    rect.setAttribute('height',y2);
+	    rect.setAttribute('stroke','green');
+		rect.setAttribute('fill','green');
+	    rect.setAttribute('stroke-width','4px');
+	    svg.appendChild(rect);
+	}
+	function drawRect5(x1,y1,x2,y2){
+		var svg   = svg=document.getElementById("mysvg1");
+	    var svgNS = svg.namespaceURI;
+	    var rect = document.createElementNS(svgNS,'rect');
+	    rect.setAttribute('x',x1);
+	    rect.setAttribute('y',y1);
+	    rect.setAttribute('width',x2);
+	    rect.setAttribute('height',y2);
+	    rect.setAttribute('stroke','green');
+		rect.setAttribute('fill','green');
+	    rect.setAttribute('stroke-width','4px');
+	    svg.appendChild(rect);
+	}
+	
+	function drawRect1r(x1,y1,x2,y2){
+		var svg   = svg=document.getElementById("mysvg1");
+	    var svgNS = svg.namespaceURI;
+	    var rect = document.createElementNS(svgNS,'rect');
+	    rect.setAttribute('x',x1);
+	    rect.setAttribute('y',y1);
+	    rect.setAttribute('width',x2);
+	    rect.setAttribute('height',y2);
+	    rect.setAttribute('stroke','red');
+		rect.setAttribute('fill','red');
+	    rect.setAttribute('stroke-width','4px');
+	    svg.appendChild(rect);
+	}
+	
+	function drawRect2r(x1,y1,x2,y2){
+		var svg   = svg=document.getElementById("mysvg1");
+	    var svgNS = svg.namespaceURI;
+	    var rect = document.createElementNS(svgNS,'rect');
+	    rect.setAttribute('x',x1);
+	    rect.setAttribute('y',y1);
+	    rect.setAttribute('width',x2);
+	    rect.setAttribute('height',y2);
+	    rect.setAttribute('stroke','red');
+		rect.setAttribute('fill','red');
+	    rect.setAttribute('stroke-width','4px');
+	    svg.appendChild(rect);
+	}
+	function drawRect3r(x1,y1,x2,y2){
+		var svg   = svg=document.getElementById("mysvg1");
+	    var svgNS = svg.namespaceURI;
+	    var rect = document.createElementNS(svgNS,'rect');
+	    rect.setAttribute('x',x1);
+	    rect.setAttribute('y',y1);
+	    rect.setAttribute('width',x2);
+	    rect.setAttribute('height',y2);
+	    rect.setAttribute('stroke','red');
+		rect.setAttribute('fill','red');
+	    rect.setAttribute('stroke-width','4px');
+	    svg.appendChild(rect);
+	}
+	function drawRect4r(x1,y1,x2,y2){
+		var svg   = svg=document.getElementById("mysvg1");
+	    var svgNS = svg.namespaceURI;
+	    var rect = document.createElementNS(svgNS,'rect');
+	    rect.setAttribute('x',x1);
+	    rect.setAttribute('y',y1);
+	    rect.setAttribute('width',x2);
+	    rect.setAttribute('height',y2);
+	    rect.setAttribute('stroke','red');
+		rect.setAttribute('fill','red');
+	    rect.setAttribute('stroke-width','4px');
+	    svg.appendChild(rect);
+	}
+	function drawRect5r(x1,y1,x2,y2){
+		var svg   = svg=document.getElementById("mysvg1");
+	    var svgNS = svg.namespaceURI;
+	    var rect = document.createElementNS(svgNS,'rect');
+	    rect.setAttribute('x',x1);
+	    rect.setAttribute('y',y1);
+	    rect.setAttribute('width',x2);
+	    rect.setAttribute('height',y2);
+	    rect.setAttribute('stroke','red');
+		rect.setAttribute('fill','red');
+	    rect.setAttribute('stroke-width','4px');
+	    svg.appendChild(rect);
+	}
+	function drawLine(x1,y1,x2,y2){
+		var svg   = svg=document.getElementById("mysvg1");
+	    var svgNS = svg.namespaceURI;
+	    var line = document.createElementNS(svgNS,'line');
+	    line.setAttribute('x1',x1);
+	    line.setAttribute('y1',y1);
+	    line.setAttribute('x2',x2);
+	    line.setAttribute('y2',y2);
+	    line.setAttribute('stroke','black');
+	    line.setAttribute('stroke-width','4px');
+	    svg.appendChild(line);
+	}
+		
+		
+	 var time = 0;
+        setInterval(function() {
+            $.ajax({
+                type: "POST",
+                data: {time : time},
+                url: "fileupdate.php",
+                success: function (data) {
+                    var result = $.parseJSON(data)
+                    if (result.content) {
+                       // $('#file_content').write('<br>' + result.content);
+						fileDisplayArea.innerText = result.content;
+						var value= parseInt(result.content);
+						if(value<50)
+						{
+							// $('#file_content').write('red');
+							fileDisplayArea.innerText = result.content;
+							 drawRect1r(120,80,160,150);
+						}
+						else{
+								//$('#file_content').write('green');
+								fileDisplayArea.innerText = result.content;
+								drawRect1(120,80,160,150);
+						}
+                    }
+                    time = result.time;
+                }
+            });
+        }, 1000);	
+		
+
+			
+</script>
